@@ -4,7 +4,7 @@ class Todo extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            message: "Hello"
+            name: "Hello"
         };
         this.removeTodo = this.removeTodo.bind(this);
         console.log(`Todo Component ${this.props.id} constructor called`)
@@ -16,21 +16,21 @@ class Todo extends React.PureComponent {
 
     componentDidUpdate() {
         console.log(
-            `Todo Component ${this.props.id} updated with new message: ` + this.todo.message
+            `Todo Component ${this.props.id} updated with new name: ` + this.todo.name
         );
     }
 
     componentWillUnmount() {
         console.log(
-            `Todo component ${this.props.id} about to unmount with message: ` + this.state.message
+            `Todo component ${this.props.id} about to unmount with name: ` + this.state.name
         )
     }
 
     removeTodo() {
-        const lastChar = this.state.message[this.state.message.length - 1];
+        const lastChar = this.state.name[this.state.name.length - 1];
         if (lastChar === "!") {
             this.setState({
-                message: this.state.message.slice(0, -1)
+                name: this.state.name.slice(0, -1)
             });
         }
     }
@@ -39,8 +39,7 @@ class Todo extends React.PureComponent {
         console.log(`component ${this.props.id} render called, Todo`);
         return (
             <p>
-                {this.state.message}
-                {/* <button onClick={this.addBang}>Add '!'</button> */}
+                {this.state.name}
                 <button onClick={this.removeTodo}>Remove '!'</button>
             </p>
         );
