@@ -15,10 +15,6 @@ const TodoForm = (props) => {
                     value={props.todoName}
                 />
                 <button>Add</button>
-<<<<<<< HEAD
-=======
-
->>>>>>> 48e02192062216828248ea6df61a0fd0a30cb289
             </form>
             {console.log('Props from App.js', props)}
         </div>

@@ -37,7 +37,6 @@ class App extends React.Component {
     })
   }
 
-<<<<<<< HEAD
   // Use key to delete seperate ones?
   removeTodo = () => {
     console.log('Remove')
@@ -64,22 +63,6 @@ class App extends React.Component {
           removeTodo={this.removeTodo}
         />
 
-=======
-  render() {
-    const { todoName, todoNumber } = this.state
-    return (
-      <div className="App">
-        <TodoList
-          todoName={todoName}
-          todoNumber={todoNumber} />
-
-        <TodoForm
-          todoName={todoName}
-          todoNumber={todoNumber}
-          handleName={this.handleName}
-          handleSubmit={this.handleSubmit}
-        />
->>>>>>> 48e02192062216828248ea6df61a0fd0a30cb289
       </div>
     );
   }
@@ -90,8 +73,4 @@ class App extends React.Component {
 export default App;
 
 //We want the App state to hold the name and information of the todo itself
-<<<<<<< HEAD
 //the todo.js will keep its lifecycle methods and be called by the todolist
-=======
-//the todo.js will keep its lifecycle methods and be called by the todolist
->>>>>>> 48e02192062216828248ea6df61a0fd0a30cb289
