@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 // import Todo from './Components/todo';
+=======
+import Todo from '../Components/todo';
+>>>>>>> 48e02192062216828248ea6df61a0fd0a30cb289
 
 // const TodoList = (props) => {
 
@@ -7,6 +11,7 @@ import React from 'react';
 // }
 
 const TodoList = (props) => {
+<<<<<<< HEAD
     console.log("todo items", props.todoItems)
     const todoItems = () => {
         return props.todoItems.map((el) => {
@@ -19,6 +24,11 @@ const TodoList = (props) => {
         <div>
             {todoItems()}
             {console.log('This Name', props.todoName)}
+=======
+    return (
+        <div>
+            {console.log('This Truth', props.todoNumber)}
+>>>>>>> 48e02192062216828248ea6df61a0fd0a30cb289
         </div>
     )
 }
