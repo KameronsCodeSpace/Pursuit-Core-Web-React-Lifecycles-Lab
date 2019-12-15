@@ -11,7 +11,7 @@ const TodoList = (props) => {
     const todoItems = () => {
         return props.todoItems.map((el) => {
             return (
-                <p>{el.todoName} <button onClick={props.removeTodo}>Remove</button></p> 
+                <p id='elementId'>{el.todoName} <button onClick={props.removeTodo} key={props.todoName}>Remove</button></p> 
             )
         })
     }

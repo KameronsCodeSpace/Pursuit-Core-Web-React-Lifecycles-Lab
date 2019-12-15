@@ -10,7 +10,6 @@ class App extends React.Component {
     this.initialState = {
       todoName: '',
       todoItems: [],
-      todoNumber: 1
 
     }
     this.state = this.initialState
@@ -37,11 +36,12 @@ class App extends React.Component {
     })
   }
 
-  // Use key to delete seperate ones?
+  // Use key to delete seperate ones? Nope it just works with a simple remove of the child
   removeTodo = () => {
     console.log('Remove')
-    // this.props.removeTodo
-    // const lastChar = this.state.name[this.state.name.length - 1];
+    let element = document.getElementById('elementId');
+    element.parentNode.removeChild(element);
+
   }
 
 
